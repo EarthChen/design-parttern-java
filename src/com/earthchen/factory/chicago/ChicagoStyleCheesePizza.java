@@ -5,12 +5,17 @@ import com.earthchen.factory.Pizza;
 public class ChicagoStyleCheesePizza extends Pizza {
 
 
-    public ChicagoStyleCheesePizza() {
-        name = "Chicago style sauce and cheese pizza";
-        dough = "Chicago thin crust dough";
-        sauce = " Chicago marinara sauce";
+//    public ChicagoStyleCheesePizza() {
+//        name = "Chicago style sauce and cheese pizza";
+//        dough = "Chicago thin crust dough";
+//        sauce = " Chicago marinara sauce";
+//
+//        toppings.add(" Chicago crated reggiano cheese");
+//    }
 
-        toppings.add(" Chicago crated reggiano cheese");
+    @Override
+    protected void prepare() {
+
     }
 
     protected void cut() {

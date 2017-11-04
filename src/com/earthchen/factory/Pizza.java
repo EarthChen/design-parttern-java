@@ -1,14 +1,24 @@
 package com.earthchen.factory;
 
+import com.earthchen.factory.ingredient.*;
+
 import java.util.ArrayList;
 
 public abstract class Pizza {
 
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     protected String name;
 
-    protected String dough;
-    protected String sauce;
+    protected Dough dough;
+    protected Sauce sauce;
+    protected Veggies veggies[];
+    protected Cheese cheese;
+    protected Pepperoni pepperoni;
+    protected Clams clams;
     protected ArrayList<String> toppings = new ArrayList<>();
 
 
@@ -16,15 +26,7 @@ public abstract class Pizza {
         return name;
     }
 
-    void prepare() {
-        System.out.println("prearing " + name);
-        System.out.println("tossing dough..");
-        System.out.println("adding sauce..");
-        System.out.println("adding toppings:");
-        for (String topping : toppings) {
-            System.out.println("  " + topping);
-        }
-    }
+    protected abstract void prepare();
 
     protected void bake() {
         System.out.println("bake");
@@ -36,5 +38,11 @@ public abstract class Pizza {
 
     protected void box() {
         System.out.println("box");
+    }
+
+
+    @Override
+    public String toString() {
+        return "abstract pizza name"+name;
     }
 }

@@ -4,12 +4,16 @@ import com.earthchen.factory.Pizza;
 
 public class NYStyleCheesePizza extends Pizza {
 
-    public NYStyleCheesePizza() {
-        name = "ny style sauce and cheese pizza";
-        dough = "thin crust dough";
-        sauce = "marinara sauce";
+//    public NYStyleCheesePizza() {
+//        name = "ny style sauce and cheese pizza";
+//        dough = "thin crust dough";
+//        sauce = "marinara sauce";
+//
+//        toppings.add("crated reggiano cheese");
+//    }
 
-        toppings.add("crated reggiano cheese");
+    @Override
+    protected void prepare() {
+
     }
-
 }
