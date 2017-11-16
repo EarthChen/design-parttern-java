@@ -1,7 +1,9 @@
-package com.earthchen.composite.menu;
+package com.earthchen.composite.iterator;
 
+import java.util.Iterator;
 
 public class MenuItem extends MenuComponent {
+
     String name;
     String description;
     boolean vegetarian;
@@ -31,6 +33,10 @@ public class MenuItem extends MenuComponent {
 
     public boolean isVegetarian() {
         return vegetarian;
+    }
+
+    public Iterator createIterator() {
+        return new NullIterator();
     }
 
     public void print() {
