@@ -1,5 +1,6 @@
 package com.earthchen.iterator.dinnerPancake.test;
 
+import com.earthchen.iterator.dinnerPancake.DinerMenu;
 import com.earthchen.iterator.dinnerPancake.PancakeHouseMenu;
 import com.earthchen.iterator.dinnerPancake.Waitress;
 
